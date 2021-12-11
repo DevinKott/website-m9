@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader";
 function App() {
     return (
         <main
-            className="container mx-auto font-mono text-md subpixel-antialiased leading-7 text-neutral-800"
+            className="container mx-auto font-mono text-md subpixel-antialiased leading-7 text-neutral-800 2xl:px-80 xl:px-40 lg:px-20 md:px-10 px-5"
         >
             <section>
                 <SectionHeader title={`I'm Devin Kott, a computer scientist from Rochester, New York`}/>
