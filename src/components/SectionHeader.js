@@ -2,7 +2,7 @@ function SectionHeader(props) {
     const { title } = props;
 
     return (
-        <h2 className="text-2xl pt-5 pb-5 underline text-neutral-900">
+        <h2 className="text-2xl pb-5 underline text-neutral-900">
             {title}
         </h2>
     );

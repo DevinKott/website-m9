@@ -1,11 +1,36 @@
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import SectionHeader from "./components/SectionHeader";
+import Separator from "./components/Separator";
 
 function App() {
+    // https://stackoverflow.com/a/2536445
+    const monthDiff = (startDate, endDate) => {
+        let months = 0;
+        months = (endDate.getFullYear() - startDate.getFullYear()) * 12;
+        months -= startDate.getMonth() + 1;
+        months += endDate.getMonth();
+        return months <= 0 ? 0 : months;
+    };
+
+    /** Calculate the number of months at each job I've had. */
+    const mthsInCurrent = monthDiff(new Date('2021-06-01'), new Date());
+    const mthsInKAInternFirst = monthDiff(new Date('2020-05-01'), new Date('2021-02-01'));
+    const mthsInKAInternSec = monthDiff(new Date('2019-05-01'), new Date('2019-12-01'));
+    const mthsInXerox = monthDiff(new Date('2018-01-01'), new Date('2018-08-01'));
+
+    /** Calculate the number of years total I've worked in industry. */
+    let totalWorkExperience = 0;
+    totalWorkExperience += mthsInCurrent; // Current KA job
+    totalWorkExperience += mthsInKAInternFirst; // KA internship
+    totalWorkExperience += mthsInKAInternSec; // KA internship
+    totalWorkExperience += mthsInXerox; // Xerox
+    totalWorkExperience /= 12;
+    totalWorkExperience = totalWorkExperience.toFixed(1);
+
     return (
         <main
-            className="container mx-auto font-mono text-md subpixel-antialiased leading-7 text-neutral-800 2xl:px-80 xl:px-40 lg:px-20 md:px-10 px-5"
+            className="container mx-auto font-mono text-md subpixel-antialiased leading-7 text-neutral-800 2xl:px-80 xl:px-40 lg:px-20 md:px-10 px-5 pt-5 bg-white dark:bg-black dark:text-white"
         >
             <section>
                 <SectionHeader title={`I'm Devin Kott, a computer scientist from Rochester, New York`}/>
@@ -20,39 +45,60 @@ function App() {
                 You can visit my github at <i>'https://github.com/' + i + 'kott'</i>.
                 </p>
             </section>
+            <Separator/>
             <section>
                 <SectionHeader title={`Experience`}/>
+                <span>
+                    I currently have <b className="underline">{totalWorkExperience} years</b> of experience in industry.
+                </span>
                 <Experience
                     jobTitle={'Software Development Engineer'}
                     companyName={'Kodak Alaris'}
-                    startDate={'June 2021'}
-                    endDate={'Present'}
-                    time={'6 mths'}
+                    dates={
+                        [
+                            {
+                                start: 'June 2021',
+                                end: 'Present',
+                                duration: `${mthsInCurrent} mths`,
+                            },
+                        ]
+                    }
                     skills={['JavaScript', 'React', 'Node.js', 'HTML/CSS', 'Python', 'Redux', 'Azure', 'Git/Github', 'JIRA', 'VSCode', 'MS Teams', 'Agile']}
                 />
                 <Experience
                     jobTitle={'Software Development Intern'}
                     companyName={'Kodak Alaris'}
-                    startDate={'May 2020'}
-                    endDate={'Feb 2021'}
-                    time={'10 mths'}
-                />
-                <Experience
-                    jobTitle={'Software Development Intern'}
-                    companyName={'Kodak Alaris'}
-                    startDate={'May 2019'}
-                    endDate={'Dec 2019'}
-                    time={'8 mths'}
+                    dates={
+                        [
+                            {
+                                start: 'May 2020',
+                                end: 'Feb 2021',
+                                duration: `${mthsInKAInternFirst} mths`
+                            },
+                            {
+                                start: 'May 2019',
+                                end: 'Dec 2019',
+                                duration: `${mthsInKAInternSec} mths`,
+                            },
+                        ]
+                    }
                 />
                 <Experience
                     jobTitle={'Software Engineer Intern'}
                     companyName={'Xerox'}
-                    startDate={'Jan 2018'}
-                    endDate={'Aug 2018'}
-                    time={'8 mths'}
+                    dates={
+                        [
+                            {
+                                start: 'Jan 2018',
+                                end: 'Aug 2018',
+                                duration: `${mthsInXerox} mths`,
+                            },
+                        ]
+                    }
                     skills={['C++', 'Python', 'Java', 'ClearCase']}
                 />
             </section>
+            <Separator/>
             <section>
                 <SectionHeader title={`Education`}/>
                 <Education
@@ -64,6 +110,7 @@ function App() {
                     graduateGPA='4.00'
                 />
             </section>
+            <Separator/>
             <section>
                 <SectionHeader title={`More about me`}/>
                 <p>

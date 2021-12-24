@@ -2,17 +2,27 @@ function Experience(props) {
     const {
         jobTitle = 'Job Title',
         companyName = 'Some company',
-        startDate = 'Starting Date',
-        endDate = 'Ending Date',
-        time = 'X mths',
-        skills = []
+        skills = [],
+        dates = []
     } = props;
 
     return (
         <section className="flex flex-col p-3">
             <h3 className="text-lg font-semibold mb-5">{jobTitle}</h3>
             <span>{companyName}</span>
-            <span>{startDate} - {endDate} (~{time})</span>
+            {
+                dates && Array.isArray(dates) && dates.length && dates.map(
+                    (dateObj, index) => {
+                        return (
+                            <span
+                                key={`exp-${companyName}-${index}`}
+                            >
+                                {dateObj.start} - {dateObj.end} (~{dateObj.duration})
+                            </span>
+                        );
+                    }
+                )
+            }
             {skills.length ? <span>Skills: {skills.join(', ')}</span> : ''}
         </section>
     );
