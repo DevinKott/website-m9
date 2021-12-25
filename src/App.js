@@ -2,6 +2,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import SectionHeader from "./components/SectionHeader";
 import Separator from "./components/Separator";
+import HeadshotWebP from './assets/headshot.webp';
 
 function App() {
     // https://stackoverflow.com/a/2536445
@@ -12,6 +13,13 @@ function App() {
         months += endDate.getMonth();
         return months <= 0 ? 0 : months;
     };
+
+    /**
+     * <img
+                        src={Headshot}
+                        className="basis-1/4 object-cover w-32 h-32 overflow-hidden rounded-full mx-auto mt-10"
+                    />
+     */
 
     /** Calculate the number of months at each job I've had. */
     const mthsInCurrent = monthDiff(new Date('2021-06-01'), new Date());
@@ -30,24 +38,35 @@ function App() {
 
     return (
         <main
-            className="container mx-auto font-mono text-md subpixel-antialiased leading-7 text-neutral-800 2xl:px-80 xl:px-40 lg:px-20 md:px-10 px-5 pt-5 bg-white dark:bg-black dark:text-white"
+            className="container mx-auto font-mono text-md subpixel-antialiased leading-7 text-neutral-800 2xl:px-80 xl:px-40 lg:px-20 md:px-10 px-5 pt-5 pb-5 bg-white dark:bg-black dark:text-white"
         >
             <section>
                 <SectionHeader title={`I'm Devin Kott, a computer scientist from Rochester, New York`}/>
-                <p>
-                    I graduated from the Rochester Institute of Technology with both a B.S. and M.S. in Computer Science, focusing on security, in May 2021.
-                    My goal in my career is to get started learning about modern technologies that cross with my interests: sustainability, anything space related, and automation systems to name a few.
-                    I find all of these topics fascinating and would love to contribute to either new or existing solutions.
-                </p>
+                <section
+                    className="flex flex-row items-center"
+                >
+                    <img
+                        src={HeadshotWebP}
+                        className="w-48 h-48 hidden sm:flex"
+                    />
+                    <p
+                        className="pl-0 sm:pl-4"
+                    >
+                        I graduated from the Rochester Institute of Technology with both a B.S. and M.S. in Computer Science, focusing on security, in May 2021.
+                        My goal in my career is to get started learning about modern technologies that cross with my interests: sustainability, anything space related, and automation systems to name a few.
+                        I find all of these topics fascinating and would love to contribute to either new or existing solutions.
+                    </p>
+                </section>
                 <p className='pt-5'>
                 Feel free to contact me by email at <i>i @ a</i>, where <i>i = devin</i> and <i>a = devinkott.com</i>.
                 You can visit my linkedin at <i>'https://www.linkedin.com/in/' + i + '-kott'</i>.
                 You can visit my github at <i>'https://github.com/' + i + 'kott'</i>.
                 </p>
+                
             </section>
             <Separator/>
             <section>
-                <SectionHeader title={`Experience`}/>
+                <SectionHeader title={`Work`}/>
                 <span>
                     I currently have <b className="underline">{totalWorkExperience} years</b> of experience in industry.
                 </span>
@@ -120,6 +139,11 @@ function App() {
                     My NUC10i5 runs proxmox with several containers for various services, including HomeAssistant, Plex, bitwarden, and caddy.
                 </p>
             </section>
+            <footer
+                className="text-xs w-full text-center mt-10 py-3"
+            >
+                &copy; Devin Kott {new Date().getFullYear()} | Hosted on AWS | Built with React/Tailwind
+            </footer>
         </main>
     );
 }
