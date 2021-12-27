@@ -1,9 +1,11 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import SectionHeader from "./components/SectionHeader";
 import Separator from "./components/Separator";
 import HeadshotWebP from './assets/headshot.webp';
+
+import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 
 function App() {
     // https://stackoverflow.com/a/2536445
@@ -51,20 +53,21 @@ function App() {
                         alt="Headshot of Devin Kott"
                         className="w-48 h-48 hidden sm:flex"
                     />
-                    <p
-                        className="pl-0 sm:pl-4"
-                    >
-                        I graduated from the Rochester Institute of Technology with both a B.S. and M.S. in Computer Science, focusing on security, in May 2021.
-                        My goal in my career is to get started learning about modern technologies that cross with my interests: sustainability, anything space related, and automation systems to name a few.
-                        I find all of these topics fascinating and would love to contribute to either new or existing solutions.
-                    </p>
+                    <div>
+                        <p
+                            className="pl-0 sm:pl-4 pb-4"
+                        >
+                            I'm currently a software development engineer for Kodak Alaris, where I primarily work on the Kodak Moments website.
+                            I focus on creating robust new features and mending user-experience errors related to backend services.
+                        </p>
+                        <p
+                            className="pl-0 sm:pl-4"
+                        >
+                            I graduated from the Rochester Institute of Technology in May 2021, having received a B.S. and M.S. in Computer Science (with a focus on security).
+                            My schooling has imprinted me with the idea of creating and shipping secure, robust, and efficient code with the latest technologies.
+                        </p>
+                    </div>
                 </section>
-                <p className='pt-5'>
-                Feel free to contact me by email at <i>i @ a</i>, where <i>i = devin</i> and <i>a = devinkott.com</i>.
-                You can visit my linkedin at <i>'https://www.linkedin.com/in/' + i + '-kott'</i>.
-                You can visit my github at <i>'https://github.com/' + i + 'kott'</i>.
-                </p>
-                
             </section>
             <Separator/>
             <section>
@@ -146,8 +149,17 @@ function App() {
             </section>
             <footer
                 className="text-xs w-full text-center mt-10 py-3"
-            >
-                &copy; Devin Kott {new Date().getFullYear()} | Hosted on AWS | Built with React/Tailwind
+            > 
+                <div
+                    className="flex flex-row w-full justify-center mb-4"
+                >
+                    <a className="px-4 mx-2" href="mailto:devin.kott@gmail.com" target="_blank" rel="noreferrer"><AiOutlineMail style={{ width: '2em', height: '2em' }}/></a>
+                    <a className="px-4 mx-2" href="https://www.linkedin.com/in/devin-kott" target="_blank" rel="noreferrer"><AiFillLinkedin style={{ width: '2em', height: '2em' }}/></a>
+                    <a className="px-4 mx-2" href="https://github.com/DevinKott" target="_blank" rel="noreferrer"><AiFillGithub style={{ width: '2em', height: '2em' }}/></a>
+                </div>
+                <span>
+                    &copy; Devin Kott {new Date().getFullYear()} | Hosted on AWS | Built with React/Tailwind
+                </span>
             </footer>
         </main>
     );
