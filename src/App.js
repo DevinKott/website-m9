@@ -43,7 +43,7 @@ function App() {
             className="container mx-auto font-mono text-md subpixel-antialiased leading-7 text-neutral-800 2xl:px-80 xl:px-40 lg:px-20 md:px-10 px-5 pt-5 pb-5 bg-white dark:bg-black dark:text-white"
         >
             <section>
-                <SectionHeader title={`I'm Devin Kott, a computer scientist from Rochester, New York`}/>
+                <SectionHeader title={`I'm Devin Kott, a programmer from Rochester, New York`}/>
                 <section
                     className="flex flex-row items-center"
                 >
@@ -56,14 +56,14 @@ function App() {
                         <p
                             className="pl-0 sm:pl-4 pb-4"
                         >
-                            I'm currently working as a software development engineer for Kodak Alaris, where I primarily work on the Kodak Moments website.
+                            I currently work as a software development engineer for Kodak Alaris, where I primarily work on the Kodak Moments website.
                             I focus on creating robust and secure new features and mending user-experience errors related to backend services.
                         </p>
                         <p
                             className="pl-0 sm:pl-4"
                         >
-                            I graduated from the Rochester Institute of Technology in May 2021, having received a B.S. and M.S. in Computer Science (with a focus on security).
-                            My schooling has imprinted me with the idea of creating and shipping secure, robust, and efficient code with the latest technologies.
+                            I graduated from the Rochester Institute of Technology in May 2021, having received a B.S. and M.S. in Computer Science with a focus in security.
+                            My schooling has imprinted me with the idea of building and delivering secure, robust, and efficient code using the latest technologies.
                         </p>
                     </div>
                 </section>
