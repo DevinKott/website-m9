@@ -1,3 +1,4 @@
+import React, { lazy, Suspense } from 'react';
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import SectionHeader from "./components/SectionHeader";
@@ -74,6 +75,7 @@ function App() {
                 <Experience
                     jobTitle={'Software Development Engineer'}
                     companyName={'Kodak Alaris'}
+                    link={'https://www.kodakalaris.com/'}
                     dates={
                         [
                             {
@@ -88,6 +90,7 @@ function App() {
                 <Experience
                     jobTitle={'Software Development Intern'}
                     companyName={'Kodak Alaris'}
+                    link={'https://www.kodakalaris.com/'}
                     dates={
                         [
                             {
@@ -106,6 +109,7 @@ function App() {
                 <Experience
                     jobTitle={'Software Engineer Intern'}
                     companyName={'Xerox'}
+                    link={'https://www.xerox.com/en-us'}
                     dates={
                         [
                             {
