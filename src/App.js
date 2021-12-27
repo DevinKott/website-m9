@@ -47,6 +47,7 @@ function App() {
                 >
                     <img
                         src={HeadshotWebP}
+                        alt="Headshot of Devin Kott"
                         className="w-48 h-48 hidden sm:flex"
                     />
                     <p
