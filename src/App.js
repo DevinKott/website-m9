@@ -57,8 +57,8 @@ function App() {
                         <p
                             className="pl-0 sm:pl-4 pb-4"
                         >
-                            I'm currently a software development engineer for Kodak Alaris, where I primarily work on the Kodak Moments website.
-                            I focus on creating robust new features and mending user-experience errors related to backend services.
+                            I'm currently working as a software development engineer for Kodak Alaris, where I primarily work on the Kodak Moments website.
+                            I focus on creating robust and secure new features and mending user-experience errors related to backend services.
                         </p>
                         <p
                             className="pl-0 sm:pl-4"
@@ -141,7 +141,7 @@ function App() {
             <section>
                 <SectionHeader title={`More about me`}/>
                 <p>
-                    I enjoy messing around with home automation, fixing iPhones, rock climbing, skiing, playing volleyball, riding motorcycles, flying drones, and photography.
+                    My interests include home automation, fixing iPhones, rock climbing, skiing, playing volleyball, riding motorcycles, flying drones, and photography.
                     Here are some of the technologies and hardware I use: Fedora, Ubuntu, Windows, NUC10i5, Synology DS218, Netgear Orbi, proxmox, Xiaomi, PiHole, TickTick.
                     I use (or have used) a few AWS services as well: Amplify, Route 53, S3.
                     My NUC10i5 runs proxmox with several containers for various services, including HomeAssistant, Plex, bitwarden, and caddy.
