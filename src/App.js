@@ -3,6 +3,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import SectionHeader from "./components/SectionHeader";
 import Separator from "./components/Separator";
+import Link from './components/Link';
 
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 
@@ -202,7 +203,7 @@ function App() {
                     </a>
                 </div>
                 <span>
-                    &copy; Devin Kott {new Date().getFullYear()} | Hosted on AWS | Built with React/Tailwind
+                    &copy; <Link linkTo="https://www.devinkott.com/" comp="Devin Kott"/> {new Date().getFullYear()} | Hosted on <Link linkTo="https://aws.amazon.com/" comp="AWS"/> | Built with <Link linkTo="https://reactjs.org/" comp="React"/>/<Link linkTo="https://tailwindcss.com/" comp="Tailwind"/>
                 </span>
             </footer>
         </main>
