@@ -153,9 +153,54 @@ function App() {
                 <div
                     className="flex flex-row w-full justify-center mb-4"
                 >
-                    <a className="px-4 mx-2" href="mailto:devin.kott@gmail.com" target="_blank" rel="noreferrer"><AiOutlineMail style={{ width: '2em', height: '2em' }}/></a>
-                    <a className="px-4 mx-2" href="https://www.linkedin.com/in/devin-kott" target="_blank" rel="noreferrer"><AiFillLinkedin style={{ width: '2em', height: '2em' }}/></a>
-                    <a className="px-4 mx-2" href="https://github.com/DevinKott" target="_blank" rel="noreferrer"><AiFillGithub style={{ width: '2em', height: '2em' }}/></a>
+                    <a
+                        className="px-4 mx-2"
+                        href="mailto:devin.kott@gmail.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Email"
+                    >
+                        <AiOutlineMail
+                            style={
+                                {
+                                    width: '2em',
+                                    height: '2em'
+                                }
+                            }
+                        />
+                    </a>
+                    <a
+                        className="px-4 mx-2"
+                        href="https://www.linkedin.com/in/devin-kott"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <AiFillLinkedin
+                            style={
+                                {
+                                    width: '2em',
+                                    height: '2em'
+                                }
+                            }
+                        />
+                    </a>
+                    <a
+                        className="px-4 mx-2"
+                        href="https://github.com/DevinKott"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Github"
+                    >
+                        <AiFillGithub
+                            style={
+                                {
+                                    width: '2em',
+                                    height: '2em'
+                                }
+                            }
+                        />
+                    </a>
                 </div>
                 <span>
                     &copy; Devin Kott {new Date().getFullYear()} | Hosted on AWS | Built with React/Tailwind

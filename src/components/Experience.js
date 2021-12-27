@@ -25,6 +25,7 @@ function Experience(props) {
                     href={link}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label={companyName}
                 >
                     <HiExternalLink/>
                 </a>
