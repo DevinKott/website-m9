@@ -3,7 +3,6 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import SectionHeader from "./components/SectionHeader";
 import Separator from "./components/Separator";
-import HeadshotWebP from './assets/headshot.webp';
 
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 
@@ -49,7 +48,7 @@ function App() {
                     className="flex flex-row items-center"
                 >
                     <img
-                        src={HeadshotWebP}
+                        src={"https://devin-public-files.s3.us-east-2.amazonaws.com/headshots/headshot_circle.webp"}
                         alt="Headshot of Devin Kott"
                         className="w-48 h-48 hidden sm:flex"
                     />
