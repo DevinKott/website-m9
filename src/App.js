@@ -6,6 +6,7 @@ import Separator from "./components/Separator";
 import Link from './components/Link';
 
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import PhotoViewer from './components/PhotoViewer';
 
 function App() {
     // https://stackoverflow.com/a/2536445
@@ -147,6 +148,7 @@ function App() {
                     My NUC10i5 runs proxmox with several containers for various services, including HomeAssistant, Plex, bitwarden, and caddy.
                 </p>
             </section>
+            <PhotoViewer/>
             <footer
                 className="text-xs w-full text-center mt-10 py-3"
             > 
