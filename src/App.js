@@ -8,6 +8,7 @@ import Link from './components/Link';
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import PhotoViewer from './components/PhotoViewer';
 import OtherExperience from './components/OtherExperience';
+import Courses from './components/Courses';
 
 function App() {
     // https://stackoverflow.com/a/2536445
@@ -140,6 +141,7 @@ function App() {
                     graduateGPA='4.00'
                 />
             </section>
+            <Courses/>
             <Separator/>
             <section>
                 <SectionHeader title={`More about me`}/>
