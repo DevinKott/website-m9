@@ -1,5 +1,5 @@
 import { useState} from 'react';
-import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import Experience from './Experience';
 import FadeIn from './FadeIn';
 
@@ -19,12 +19,16 @@ function OtherExperience() {
                 aria-label='Show Other Experience'
                 aria-pressed={visible ? 'true' : 'false'}
             >
-                <span>Other</span>
+                <span
+                    className='mr-1'
+                >
+                    Other Experience
+                </span>
                 {
-                    visible && <AiOutlineArrowUp/>
+                    visible && <AiOutlineArrowLeft/>
                 }
                 {
-                    !visible && <AiOutlineArrowDown/>
+                    !visible && <AiOutlineArrowRight/>
                 }
             </div>
             <FadeIn
