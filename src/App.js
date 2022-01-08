@@ -7,6 +7,7 @@ import Link from './components/Link';
 
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import PhotoViewer from './components/PhotoViewer';
+import OtherExperience from './components/OtherExperience';
 
 function App() {
     // https://stackoverflow.com/a/2536445
@@ -126,6 +127,7 @@ function App() {
                     skills={['C++', 'Python', 'Java', 'ClearCase']}
                 />
             </section>
+            <OtherExperience/>
             <Separator/>
             <section>
                 <SectionHeader title={`Education`}/>
