@@ -7,7 +7,6 @@ import Link from './components/Link';
 
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import PhotoViewer from './components/PhotoViewer';
-import OtherExperience from './components/OtherExperience';
 import Courses from './components/Courses';
 
 function App() {
@@ -60,13 +59,13 @@ function App() {
                         <p
                             className="pl-0 sm:pl-4 pb-4"
                         >
-                            I currently work as a software development engineer for Kodak Alaris, where I primarily work on the Kodak Moments website.
-                            I focus on creating robust and secure new features and mending user-experience errors related to backend services.
+                            I work as a software development engineer for Kodak Alaris, where I primarily work on the Kodak Moments website.
+                            I focus on building robust and secure new features and mending user-experience faults associated with backend services.
                         </p>
                         <p
                             className="pl-0 sm:pl-4"
                         >
-                            I graduated from the Rochester Institute of Technology in May 2021, having received a B.S. and M.S. in Computer Science with a focus in security.
+                            I graduated from the Rochester Institute of Technology in May 2021, having received both a Master's and Bachelor's degree in Computer Science, with a focus on security.
                             My schooling has imprinted me with the idea of building and delivering secure, robust, and efficient code using the latest technologies.
                         </p>
                     </div>
@@ -128,7 +127,6 @@ function App() {
                     skills={['C++', 'Python', 'Java', 'ClearCase']}
                 />
             </section>
-            <OtherExperience/>
             <Separator/>
             <section>
                 <SectionHeader title={`Education`}/>
