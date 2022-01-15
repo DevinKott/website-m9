@@ -163,8 +163,9 @@ function App() {
             <footer
                 className="text-xs w-full text-center mt-10 py-3"
             > 
+                <span>Contact Information</span>
                 <div
-                    className="flex flex-row w-full justify-center mb-4"
+                    className="flex flex-row w-full justify-center my-4"
                 >
                     <a
                         className="px-4 mx-2"
