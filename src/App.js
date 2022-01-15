@@ -80,6 +80,7 @@ function App() {
                 <Experience
                     jobTitle={'Software Development Engineer'}
                     companyName={'Kodak Alaris'}
+                    location={'Rochester, NY'}
                     link={'https://www.kodakalaris.com/'}
                     dates={
                         [
@@ -95,6 +96,7 @@ function App() {
                 <Experience
                     jobTitle={'Software Development Intern'}
                     companyName={'Kodak Alaris'}
+                    location={'Rochester, NY'}
                     link={'https://www.kodakalaris.com/'}
                     dates={
                         [
@@ -114,6 +116,7 @@ function App() {
                 <Experience
                     jobTitle={'Software Engineer Intern'}
                     companyName={'Xerox'}
+                    location={'Rochester, NY'}
                     link={'https://www.xerox.com/en-us'}
                     dates={
                         [

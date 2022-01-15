@@ -7,7 +7,8 @@ function Experience(props) {
         companyName = 'Some company',
         skills = [],
         dates = [],
-        link = 'https://www.google.com/'
+        link = 'https://www.google.com/',
+        location = ''
     } = props;
 
     return (
@@ -21,6 +22,12 @@ function Experience(props) {
                 >
                     {companyName}
                 </span>
+                {
+                    location.length > 0 &&
+                    <span>
+                        , {location}
+                    </span>
+                }
                 <a
                     href={link}
                     target="_blank"
@@ -29,6 +36,7 @@ function Experience(props) {
                 >
                     <HiExternalLink/>
                 </a>
+                
             </div>
             {
                 dates && Array.isArray(dates) && dates.length && dates.map(
