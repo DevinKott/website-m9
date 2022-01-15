@@ -92,6 +92,11 @@ function App() {
                         ]
                     }
                     skills={['JavaScript', 'React', 'Node.js', 'HTML/CSS', 'Python', 'Redux', 'Azure', 'Git/Github', 'JIRA', 'VSCode', 'MS Teams', 'Agile']}
+                    keyPoints={
+                        [
+                            "Implemented an error reporting solution that collects and reports key information about consumer-facing errors to Azure Application Insights, which has led to increased site robustness and error handling situations.",
+                        ]
+                    }
                 />
                 <Experience
                     jobTitle={'Software Development Intern'}
