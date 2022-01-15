@@ -12,7 +12,7 @@ function Experience(props) {
 
     return (
         <section className="flex flex-col p-3">
-            <h3 className="text-lg font-semibold mb-5">{jobTitle}</h3>
+            <h3 className="text-lg font-semibold mb-5 italic">{jobTitle}</h3>
             <div
                 className='flex flex-row'
             >

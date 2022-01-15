@@ -10,7 +10,7 @@ function Experience(props) {
 
     return (
         <section className="flex flex-col p-3">
-            <h3 className="text-lg font-semibold mb-5">{title}, {school}</h3>
+            <h3 className="text-lg font-semibold mb-5 italic">{title}, {school}</h3>
             <span>Undergraduate GPA: {undergradGPA}</span>
             <span>Graduate GPA: {graduateGPA}</span>
             <span>{startDate} - {endDate}</span>
