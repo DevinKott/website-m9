@@ -8,7 +8,8 @@ function Experience(props) {
         skills = [],
         dates = [],
         link = 'https://www.google.com/',
-        location = ''
+        location = '',
+        keyPoints = []
     } = props;
 
     return (
@@ -52,6 +53,31 @@ function Experience(props) {
                 )
             }
             {skills.length ? <span>Skills: {skills.join(', ')}</span> : ''}
+            {
+                keyPoints.length > 0 &&
+                <section
+                    className='pt-4'
+                >
+                    <span className='italic'>Key Contributions</span>
+                    <ul
+                        className='list-disc list-inside pt-3'
+                    >
+                        {
+                            keyPoints.map(
+                                (keyPoint, index) => {
+                                    return (
+                                        <li
+                                            key={`kp-${index}-${companyName}`}
+                                        >
+                                            {keyPoint}
+                                        </li>
+                                    );
+                                },
+                            )
+                        }
+                    </ul>
+                </section>
+            }
         </section>
     );
 };

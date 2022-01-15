@@ -127,7 +127,13 @@ function App() {
                             },
                         ]
                     }
-                    skills={['C++', 'Python', 'Java', 'ClearCase']}
+                    skills={['C++14', 'Python', 'Java', 'ClearCase']}
+                    keyPoints={
+                        [
+                            "Responsible for converting a simulator from Java into C++14 to be used by other developers and programs.",
+                            "Updated core technologies used by the simulator to newer libraries and architectures."
+                        ]
+                    }
                 />
             </section>
             <Separator/>
