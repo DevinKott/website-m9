@@ -88,7 +88,7 @@ function Courses() {
                 <h3
                     className='text-md pt-3 pb-2 font-semibold text-neutral-900'
                 >
-                    Math Courses
+                    Mathematics Courses
                 </h3>
                 <ul
                     className='list-disc list-inside'
