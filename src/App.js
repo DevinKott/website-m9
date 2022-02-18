@@ -46,7 +46,7 @@ function App() {
             className="container mx-auto font-mono text-md subpixel-antialiased leading-7 text-neutral-800 2xl:px-80 xl:px-40 lg:px-20 md:px-10 px-5 pt-5 pb-5 bg-white dark:bg-black dark:text-white"
         >
             <section>
-                <SectionHeader title={`I'm Devin Kott, a programmer from Rochester, New York`}/>
+                <SectionHeader title={`I'm Devin Kott, a software developer from Rochester, New York`}/>
                 <section
                     className="flex flex-row items-center"
                 >
