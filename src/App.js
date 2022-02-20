@@ -94,7 +94,9 @@ function App() {
                     skills={['JavaScript', 'React', 'Node.js', 'HTML/CSS', 'Python', 'Redux', 'Azure', 'Git/Github', 'JIRA', 'VSCode', 'MS Teams', 'Agile']}
                     keyPoints={
                         [
-                            "Implemented an error reporting solution that collects and reports key information about consumer-facing errors to Azure Application Insights, which has led to increased site robustness and error handling situations.",
+                            "Created an error logging system that surfaces consumer-facing and server-side web application errors to Azure's Application Insights, leading to increased site robustness and reliability.",
+                            "Took the initiative to analyze and improve initial page load performance on the web application, resulting in a 40\% decrease in response time for the consumer.",
+                            "All-around improvements on website reliability, robustness, and response time.",
                         ]
                     }
                 />
@@ -117,6 +119,16 @@ function App() {
                             },
                         ]
                     }
+                    skills={['C++', 'JavaScript', 'React', 'Node.js', 'Python', 'Azure', 'Git/Github', 'JIRA', 'VSCode', 'MS Teams', 'Agile']}
+                    keyPoints={
+                        [
+                            "Co-developed a new proof-of-concept kiosk system to display new hardware and software advantages and disadvantages compared to current technology.",
+                            "Developed an exploratory project that utilized infrared hand tracking to navigate an application UI on a touchscreen device.",
+                            "Developed a software system that interacts with an Arduino and LED array and can remotely adjust animations or scrolling text based on internal and external triggers.",
+                            "Created web applications to improve developer efficiencies; reduce repetitive processes.",
+                            "Conveyed development progress with a team of software engineers, designers, and management daily.",
+                        ]
+                    }
                 />
                 <Experience
                     jobTitle={'Software Engineer Intern'}
@@ -132,11 +144,13 @@ function App() {
                             },
                         ]
                     }
-                    skills={['C++14', 'Python', 'Java', 'ClearCase']}
+                    skills={['C++14', 'Python', 'Java', 'XML', 'Jenkins', 'ClearCase', 'CentOS', 'Windows']}
                     keyPoints={
                         [
-                            "Responsible for converting a simulator from Java into C++14 to be used by other developers and programs.",
-                            "Updated core technologies used by the simulator to newer libraries and architectures."
+                            "Responsible for converting a print machine simulator from Java to C++14, utilized by different developers to test their software before deployment to real systems.",
+                            "Modernized core technologies used by the simulator and improved the simulator's architecture layout for ease of maintenance.",
+                            "Conveyed development progress with a team of software engineers and management weekly.",
+                            "Presented my project in a final review meeting with management and other teams."
                         ]
                     }
                 />
