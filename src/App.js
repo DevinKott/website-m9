@@ -95,7 +95,7 @@ function App() {
                     keyPoints={
                         [
                             "Created an error logging system that surfaces consumer-facing and server-side web application errors to Azure's Application Insights, leading to increased site robustness and reliability.",
-                            "Took the initiative to analyze and improve initial page load performance on the web application, resulting in a 40\% decrease in response time for the consumer.",
+                            "Took the initiative to analyze and improve initial page load performance on the web application, resulting in a 40% decrease in response time for the consumer.",
                             "All-around improvements on website reliability, robustness, and response time.",
                         ]
                     }
