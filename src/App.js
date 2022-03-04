@@ -19,13 +19,6 @@ function App() {
         return months <= 0 ? 0 : months;
     };
 
-    /**
-     * <img
-                        src={Headshot}
-                        className="basis-1/4 object-cover w-32 h-32 overflow-hidden rounded-full mx-auto mt-10"
-                    />
-     */
-
     /** Calculate the number of months at each job I've had. */
     const mthsInCurrent = monthDiff(new Date('2021-06-01'), new Date());
     const mthsInKAInternFirst = monthDiff(new Date('2020-05-01'), new Date('2021-02-01'));
