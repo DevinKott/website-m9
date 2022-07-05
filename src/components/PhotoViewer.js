@@ -88,7 +88,7 @@ function PhotoViewer(props) {
                 >
                     <img
                         src={photos[idx].link}
-                        alt={`Photo Viewer - Photo ${idx + 1}`}
+                        alt={`Slide Viewer - ${idx + 1}`}
                         className="max-h-80"
                     />
                     <div
