@@ -54,8 +54,8 @@ function App() {
                         <p
                             className="pl-0 sm:pl-4 pb-4"
                         >
-                            I work as a software development engineer for Kodak Alaris, where I primarily work on the Kodak Moments website.
-                            I focus on building robust and secure new features and mending user-experience faults associated with backend services.
+                            I work as a software development engineer for Kodak Alaris, primarily working in the area of backend services.
+                            I focus on delivering robust and secure code utilized in different product areas.
                         </p>
                         <p
                             className="pl-0 sm:pl-4"
@@ -91,9 +91,10 @@ function App() {
                             },
                         ]
                     }
-                    skills={['JavaScript', 'React', 'Node.js', 'HTML/CSS', 'Python', 'Redux', 'Azure', 'Git/Github', 'JIRA', 'VSCode', 'MS Teams', 'Agile']}
+                    skills={['JavaScript', 'Shell script (sh)', 'Python', 'C#', 'React', 'Node.js', 'HTML/CSS', 'Redux', 'Azure', 'Git/Github', 'JIRA', 'VSCode', 'MS Teams', 'Agile']}
                     keyPoints={
                         [
+                            "Lead developer on a new, proof-of-concept architecture built from the ground up, using the latest technologies to achieve advantages over existing software and procedures.",
                             "Created an error logging system that surfaces consumer-facing and server-side web application errors to Azure's Application Insights, leading to increased site robustness and reliability.",
                             "Took the initiative to analyze and improve initial page load performance on the web application, resulting in a 40% decrease in response time for the consumer.",
                             "All-around improvements on website reliability, robustness, and response time.",
