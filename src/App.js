@@ -20,10 +20,12 @@ function App() {
     };
 
     /** Calculate the number of months at each job I've had. */
-    const mthsInCurrent = monthDiff(new Date('2021-06-01'), new Date());
+    const mthsInCurrent = monthDiff(new Date('2022-06-01'), new Date());
+    const mthsINKAWeb = monthDiff(new Date('2021-06-01'), new Date('2022-06-01'));
     const mthsInKAInternFirst = monthDiff(new Date('2020-05-01'), new Date('2021-02-01'));
     const mthsInKAInternSec = monthDiff(new Date('2019-05-01'), new Date('2019-12-01'));
     const mthsInXerox = monthDiff(new Date('2018-01-01'), new Date('2018-08-01'));
+    
 
     /** Calculate the number of years total I've worked in industry. */
     let totalWorkExperience = 0;
@@ -78,9 +80,14 @@ function App() {
                     dates={
                         [
                             {
-                                start: 'June 2021',
+                                start: 'June 2022',
                                 end: 'Present',
                                 duration: `${mthsInCurrent} mths`,
+                            },
+                            {
+                                start: 'June 2021',
+                                end: 'June 2022',
+                                duration: `${mthsINKAWeb} mths`,
                             },
                         ]
                     }
