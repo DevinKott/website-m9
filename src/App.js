@@ -21,7 +21,7 @@ function App() {
 
     /** Calculate the number of months at each job I've had. */
     const mthsInCurrent = monthDiff(new Date('2022-06-01'), new Date());
-    const mthsINKAWeb = monthDiff(new Date('2021-06-01'), new Date('2022-06-01'));
+    const mthsINKAWeb = monthDiff(new Date('2021-06-01'), new Date('2022-06-02'));
     const mthsInKAInternFirst = monthDiff(new Date('2020-05-01'), new Date('2021-02-01'));
     const mthsInKAInternSec = monthDiff(new Date('2019-05-01'), new Date('2019-12-01'));
     const mthsInXerox = monthDiff(new Date('2018-01-01'), new Date('2018-08-01'));
@@ -30,6 +30,7 @@ function App() {
     /** Calculate the number of years total I've worked in industry. */
     let totalWorkExperience = 0;
     totalWorkExperience += mthsInCurrent; // Current KA job
+    totalWorkExperience += mthsINKAWeb; // KA - KMWEB
     totalWorkExperience += mthsInKAInternFirst; // KA internship
     totalWorkExperience += mthsInKAInternSec; // KA internship
     totalWorkExperience += mthsInXerox; // Xerox
