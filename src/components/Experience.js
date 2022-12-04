@@ -12,9 +12,15 @@ function Experience(props) {
         keyPoints = []
     } = props;
 
+    // Calculate total duration at this company by adding `dur`s in the dates array
+    const totalDuration = dates.map(d => d.dur).reduce((acc, a) => acc + a, 0);
+
+    // Convert that total duration to a string (years if >= 12, months if else)
+    const totalDurationStr = totalDuration >= 12 ? `${(totalDuration / 12).toFixed(1)} years` : `${totalDuration} mths`
+
     return (
         <section className="flex flex-col p-3">
-            <h3 className="text-lg font-semibold mb-5 italic">{jobTitle}</h3>
+            <h3 className="text-lg font-semibold mb-5 italic">{jobTitle} ({totalDurationStr})</h3>
             <div
                 className='flex flex-row'
             >

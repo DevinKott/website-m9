@@ -84,11 +84,13 @@ function App() {
                                 start: 'June 2022',
                                 end: 'Present',
                                 duration: `${mthsInCurrent} mths`,
+                                dur: mthsInCurrent,
                             },
                             {
                                 start: 'June 2021',
                                 end: 'June 2022',
                                 duration: `${mthsINKAWeb} mths`,
+                                dur: mthsINKAWeb
                             },
                         ]
                     }
@@ -112,12 +114,14 @@ function App() {
                             {
                                 start: 'May 2020',
                                 end: 'Feb 2021',
-                                duration: `${mthsInKAInternFirst} mths`
+                                duration: `${mthsInKAInternFirst} mths`,
+                                dur: mthsInKAInternFirst
                             },
                             {
                                 start: 'May 2019',
                                 end: 'Dec 2019',
                                 duration: `${mthsInKAInternSec} mths`,
+                                dur: mthsInKAInternSec
                             },
                         ]
                     }
@@ -143,6 +147,7 @@ function App() {
                                 start: 'Jan 2018',
                                 end: 'Aug 2018',
                                 duration: `${mthsInXerox} mths`,
+                                dur: mthsInXerox
                             },
                         ]
                     }
