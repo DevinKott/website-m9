@@ -9,7 +9,8 @@ function Experience(props) {
         dates = [],
         link = 'https://www.google.com/',
         location = '',
-        keyPoints = []
+        keyPoints = [],
+        notes = [],
     } = props;
 
     // Calculate total duration at this company by adding `dur`s in the dates array
@@ -76,6 +77,31 @@ function Experience(props) {
                                             key={`kp-${index}-${companyName}`}
                                         >
                                             {keyPoint}
+                                        </li>
+                                    );
+                                },
+                            )
+                        }
+                    </ul>
+                </section>
+            }
+            {
+                notes.length > 0 &&
+                <section
+                    className='pt-4'
+                >
+                    <span className='italic'>Notes</span>
+                    <ul
+                        className='list-disc list-inside pt-3'
+                    >
+                        {
+                            notes.map(
+                                (note, index) => {
+                                    return (
+                                        <li
+                                            key={`note-${index}-${companyName}`}
+                                        >
+                                            {note}
                                         </li>
                                     );
                                 },
