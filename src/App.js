@@ -61,8 +61,8 @@ function App() {
                         <p
                             className="pl-0 sm:pl-4"
                         >
-                            I graduated from the Rochester Institute of Technology in May 2021, having received both a Master's and Bachelor's degree in Computer Science, with a focus on security.
-                            My schooling has imprinted me with the idea of building and delivering secure, robust, and efficient code using the latest technologies.
+                            I received a Master's and Bachelor's degree in Computer Science with a focus on security from the Rochester Institute of Technology in May 2021.
+                            My education has taught me the significance of creating secure, robust, and efficient code using the latest technologies.
                         </p>
                     </div>
                 </section>
@@ -94,13 +94,21 @@ function App() {
                             },
                         ]
                     }
-                    skills={['JavaScript', 'Shell script (sh)', 'Python', 'C#', 'React', 'Node.js', 'HTML/CSS', 'Redux', 'Azure', 'Git/Github', 'JIRA', 'VSCode', 'MS Teams', 'Agile']}
+                    skills={['JavaScript', 'Shell script (sh)', 'C++', 'C#', 'React', 'Node.js', 'HTML/CSS', 'Redux', 'Azure', 'Git/Github', 'JIRA', 'VSCode', 'MS Teams', 'Agile']}
                     keyPoints={
                         [
-                            "Lead developer on a new, proof-of-concept architecture built from the ground up, using the latest technologies to achieve advantages over existing software and procedures.",
+                            "Lead developer on a new, proof-of-concept architecture built from the ground up, using the latest technologies to achieve advantages over legacy software and procedures.",
+                            "Managing a small team of developers in their tasks and verify the quality of their work on the proof-of-concept architecture.",
                             "Created an error logging system that surfaces consumer-facing and server-side web application errors to Azure's Application Insights, leading to increased site robustness and reliability.",
                             "Took the initiative to analyze and improve initial page load performance on the web application, resulting in a 40% decrease in response time for the consumer.",
                             "All-around improvements on website reliability, robustness, and response time.",
+                        ]
+                    }
+                    notes={
+                        [
+                            'As a manager of other developers, my responsibilities include creating tasks based on the project architecture, receiving daily updates from team members, providing assistance as needed, and ensuring that completed tasks meet the necessary standards of quality and completeness.',
+                            'I am most practiced in JavaScript; I used it on the website and now in proof-of-concept projects.',
+                            'I have experience using C++ and C# for some of my projects.',
                         ]
                     }
                 />
