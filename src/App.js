@@ -94,7 +94,15 @@ function App() {
                             },
                         ]
                     }
-                    skills={['JavaScript', 'Shell script (sh)', 'C++', 'C#', 'React', 'Node.js', 'HTML/CSS', 'Redux', 'Azure', 'Git/Github', 'JIRA', 'VSCode', 'MS Teams', 'Agile']}
+                    skills={
+                        [
+                            'JavaScript (React + Node.js)',
+                            'C#',
+                            'Python',
+                            'Bash/sh',
+                            'Git/Github',
+                        ]
+                    }
                     keyPoints={
                         [
                             "Lead developer on a new, proof-of-concept architecture built from the ground up, using the latest technologies to achieve advantages over legacy software and procedures.",
