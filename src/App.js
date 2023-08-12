@@ -74,7 +74,7 @@ function App() {
                     I currently have <b className="underline">{totalWorkExperience} years</b> of experience in industry.
                 </span>
                 <Experience
-                    jobTitle={'Cloud Software Engineer'}
+                    jobTitle={'Remote Cloud Software Engineer'}
                     companyName={'Kodak Alaris'}
                     location={'Rochester, NY'}
                     link={'https://www.kodakalaris.com/'}
