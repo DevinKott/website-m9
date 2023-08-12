@@ -251,7 +251,7 @@ function App() {
                     </a>
                 </div>
                 <span>
-                    &copy; <Link linkTo="https://www.devinkott.com/" comp="Devin Kott"/> {new Date().getFullYear()} | Hosted on <Link linkTo="https://aws.amazon.com/" comp="AWS"/> | Built with <Link linkTo="https://reactjs.org/" comp="React"/>/<Link linkTo="https://tailwindcss.com/" comp="Tailwind"/>
+                    &copy; <Link linkTo="https://www.devinkott.com/" comp="Devin Kott"/> {new Date().getFullYear()} | Hosted on <Link linkTo="https://aws.amazon.com/" comp="AWS"/> | Built with <Link linkTo="https://reactjs.org/" comp="React"/>/<Link linkTo="https://tailwindcss.com/" comp="Tailwind"/> | <Link linkTo="https://devinkott.com/humans.txt" comp="humans"/> | <Link linkTo="https://devinkott.com/robots.txt" comp="robots"/>
                 </span>
             </footer>
         </main>
