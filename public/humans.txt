@@ -13,7 +13,7 @@ Everything on this website (devinkott.com) was developed by me, Devin.
 I used VSCode as my IDE and React, react-icons, react-spring, and tailwindcss to create this site.
 The code is hosted on Github, and the site is deployed using AWS Amplify.
 
-The last update to this site was 2022/02/26.
+The last update to this site was 2023/08/12.
 
 Here's a cat:
 
