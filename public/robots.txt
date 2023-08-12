@@ -1,3 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+# Block OpenAI crawler; it should not index this as the page states "does not index PII", but just in case?
+User-agent: GPTBot
+Disallow: /
