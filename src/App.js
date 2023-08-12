@@ -105,23 +105,18 @@ function App() {
                     }
                     keyPoints={
                         [
-                            "Lead developer on a new, proof-of-concept architecture built from the ground up, using the latest technologies to achieve advantages over legacy software and procedures.",
-                            "Managing a small team of developers in their tasks and verify the quality of their work on the proof-of-concept architecture.",
-                            "Created an error logging system that surfaces consumer-facing and server-side web application errors to Azure's Application Insights, leading to increased site robustness and reliability.",
-                            "Took the initiative to analyze and improve initial page load performance on the web application, resulting in a 40% decrease in response time for the consumer.",
-                            "All-around improvements on website reliability, robustness, and response time.",
+                            "Led a team of 3 developers on a 12-month proof-of-concept (POC) for kiosk architecture using modern technology to demonstrate increased performance over legacy systems. Completed POC included a UI, image modification and shopping cart services, printer hardware integration, and USB integration, along with unit testing, source-code analyzing, and automatic builds and deployments through Azure DevOps. POC success led to building out a technology transformation team to refactor all product lines.",
+                            "Developer for kodakmoments.com. Created an error logging system to better surface web application errors which led to increased reliability, response time, tracing ability, and maintainability. Improved the configuration and build system to improve maintainability and readability, and improved initial page load performance for end users by 10%.",
                         ]
                     }
                     notes={
                         [
-                            'As a manager of other developers, my responsibilities include creating tasks based on the project architecture, receiving daily updates from team members, providing assistance as needed, and ensuring that completed tasks meet the necessary standards of quality and completeness.',
-                            'I am most practiced in JavaScript; I used it on the website and now in proof-of-concept projects.',
-                            'I have experience using C++ and C# for some of my projects.',
+                            'Other technologies used: VSCode, Vim, Docker, Agile, Azure DevOps, C++',
                         ]
                     }
                 />
                 <Experience
-                    jobTitle={'Software Development Intern'}
+                    jobTitle={'Software Engineering Cooperative Education'}
                     companyName={'Kodak Alaris'}
                     location={'Rochester, NY'}
                     link={'https://www.kodakalaris.com/'}
@@ -144,16 +139,14 @@ function App() {
                     skills={['C++', 'JavaScript', 'React', 'Node.js', 'Python', 'Azure', 'Git/Github', 'JIRA', 'VSCode', 'MS Teams', 'Agile']}
                     keyPoints={
                         [
-                            "Co-developed a new proof-of-concept kiosk system to display new hardware and software advantages and disadvantages compared to current technology.",
-                            "Developed an exploratory project that utilized infrared hand tracking to navigate an application UI on a touchscreen device.",
-                            "Developed a software system that interacts with an Arduino and LED array and can remotely adjust animations or scrolling text based on internal and external triggers.",
-                            "Created web applications to improve developer efficiencies; reduce repetitive processes.",
-                            "Conveyed development progress with a team of software engineers, designers, and management daily.",
+                            "Co-developed a new proof-of-concept kiosk system designed to be used on low-powered devices to showcase updated hardware and software advantages compared to older kiosk technology. Learned and utilized Azure IoT platform services for device management.",
+                            "Developed software that interacts with an Arduino LED array and can play animations or scrolling text based on internal and external triggers including on-kiosk order updates and Azure IoT prompts. Developed a website used by the UI/UX team to create the animations that play on the LED array.",
+                            "Developed an exploratory project that integrated a Leap Motion (infrared hand tracking) controller with a Kodak Moments kiosk for navigation requiring no physical touch input. Researched in part due to the pandemic.",
                         ]
                     }
                 />
                 <Experience
-                    jobTitle={'Software Engineer Intern'}
+                    jobTitle={'Software Engineering Cooperative Education'}
                     companyName={'Xerox'}
                     location={'Rochester, NY'}
                     link={'https://www.xerox.com/en-us'}
@@ -170,10 +163,7 @@ function App() {
                     skills={['C++14', 'Python', 'Java', 'XML', 'Jenkins', 'ClearCase', 'CentOS', 'Windows']}
                     keyPoints={
                         [
-                            "Responsible for converting a print machine simulator from Java to C++14, utilized by different developers to test their software before deployment to real systems.",
-                            "Modernized core technologies used by the simulator and improved the simulator's architecture layout for ease of maintenance.",
-                            "Conveyed development progress with a team of software engineers and management weekly.",
-                            "Presented my project in a final review meeting with management and other teams."
+                            "Refactored a printer machine simulator from Java to C++14 which was utilized by other developers to test their software before deployment to production systems. Efforts resulted in performance and architectural improvements. Presented simulator to management and other development teams in a final review meeting."
                         ]
                     }
                 />
